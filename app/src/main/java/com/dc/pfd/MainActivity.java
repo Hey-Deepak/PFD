@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         first_in_sem_marks = findViewById(R.id.first_insem);
-        //first_in_sem_marks.setError("You need to enter a Number 0 to 50");
         setOnTextChangedListener(first_in_sem_marks, 50);
 
         second_in_sem_marks = findViewById(R.id.second_insem);
