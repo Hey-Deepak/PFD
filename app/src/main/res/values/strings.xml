@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PFD</string>
+    <string name="Hint1">First In-Sem Marks</string>
+    <string name="Hint2">Second In-Sem Marks</string>
+    <string name="Hint3">Final Sem Marks</string>
+    <string name="Hint4">Assignment Marks</string>
+    <string name="Hint5">Attendance Marks</string>
+    <string name="pfd">Pass Fail Detector</string>
+
+</resources>

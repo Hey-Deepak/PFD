@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:padding="30dp"
+        android:textSize="40sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/pfd"/>
+
+    <EditText
+        android:id="@+id/first_insem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/Hint1"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+
+    <EditText
+        android:id="@+id/second_insem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/Hint2"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/final_sem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/Hint3"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/assignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/Hint4"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/Hint5"
+        android:inputType="numberDecimal" />
+
+
+</LinearLayout>
