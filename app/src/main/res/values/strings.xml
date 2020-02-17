@@ -6,5 +6,6 @@
     <string name="Hint4">Assignment Marks</string>
     <string name="Hint5">Attendance Marks</string>
     <string name="pfd">Pass Fail Detector</string>
+    <string name="calculate">Calculate</string>
 
 </resources>
