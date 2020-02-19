@@ -7,7 +7,7 @@ public class MarksCalculator {
     float total;
 
 
-    public MarksCalculator(float myFirstInSem, float mySecondInSem, float myFinalSem, float myAttendance, float myAssignment) {
+     MarksCalculator(float myFirstInSem, float mySecondInSem, float myFinalSem, float myAttendance, float myAssignment) {
 
 
         firstInSem = myFirstInSem;
