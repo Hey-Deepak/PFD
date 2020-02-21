@@ -3,32 +3,19 @@ package com.dc.pfd;
 
 public class MarksCalculator {
 
-    float firstInSem, secondInSem, finalSem, assignment, attendance;
-    float total;
 
+     public static String calculate(float myFirstInSem, float mySecondInSem, float myFinalSem, float myAttendance, float myAssignment) {
 
-     MarksCalculator(float myFirstInSem, float mySecondInSem, float myFinalSem, float myAttendance, float myAssignment) {
-
-
-        firstInSem = myFirstInSem;
-
-        secondInSem = mySecondInSem;
-
-        finalSem = myFinalSem;
-
-        assignment = myAttendance;
-
-        attendance = myAssignment;
-        total = ((firstInSem) * 30) / 100 + (secondInSem * 30) / 100 + (finalSem * 50) / 100 + (assignment)
-                + (attendance);
+        float total = ((myFirstInSem) * 30) / 100 + (mySecondInSem * 30) / 100 + (myFinalSem * 50) / 100 + (myAssignment)
+                + (myAttendance);
 
 
         if (total >= 35) {
-            System.out.println("You are Safe and you crossed Danger Zone, Your extra marks is " + (total - 35));
+            return "You are Safe and you crossed Danger Zone, Your extra marks is " + (total - 35);
         } else
-            System.out.println("You are UnSafe and you have to gain " + (35 - total) * 2
+            return "You are UnSafe and you have to gain " + (35 - total) * 2
                     + "more marks.\n Means Next time in Final Back Paper you have to score "
-                    + (finalSem + (35 - total) * 2));
+                    + (myFinalSem + (35 - total) * 2);
 
     }
 
