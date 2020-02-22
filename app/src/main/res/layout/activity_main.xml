@@ -13,7 +13,7 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
@@ -104,7 +104,7 @@
             android:id="@+id/calculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
             android:text="@string/calculate"/>
 
@@ -113,7 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:layout_gravity="center_horizontal"/>
 
 
