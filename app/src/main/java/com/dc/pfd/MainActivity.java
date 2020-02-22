@@ -11,12 +11,9 @@ import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
-import java.util.Scanner;
-
 public class MainActivity extends AppCompatActivity {
 
-    TextInputEditText fism;
-    EditText sism, fis, asimt , atends ;
+    TextInputEditText first_in_sem_marks, second_in_sem_marks, final_sem_marks, assignment_marks, attendance_marks;
     Button calculateBtn;
 
     @Override
@@ -28,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void assignVars (){
-        fism = findViewById(R.id.first_insem);
-        sism = findViewById(R.id.second_insem);
-        fis = findViewById(R.id.final_sem);
-        asimt = findViewById(R.id.assignment);
-        atends = findViewById(R.id.attendance);
+        first_in_sem_marks = findViewById(R.id.first_insem);
+        second_in_sem_marks = findViewById(R.id.second_insem);
+        final_sem_marks = findViewById(R.id.final_sem);
+        assignment_marks = findViewById(R.id.assignment);
+        attendance_marks = findViewById(R.id.attendance);
 
         calculateBtn = findViewById(R.id.calculate);
 
@@ -46,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void validateForm() {
         try{
-            float fism1 = Float.parseFloat(fism.getText().toString())
-                    , sism1 = Float.parseFloat(sism.getText().toString())
-                    , fis1 = Float.parseFloat(fis.getText().toString())
-                    , asimt1 = Float.parseFloat(asimt.getText().toString())
-                    , atends1 = Float.parseFloat(atends.getText().toString());
+            float firstInSem = Float.parseFloat(first_in_sem_marks.getText().toString())
+                    , secondInSem = Float.parseFloat(second_in_sem_marks.getText().toString())
+                    , finalInSem = Float.parseFloat(final_sem_marks.getText().toString())
+                    , assignment = Float.parseFloat(assignment_marks.getText().toString())
+                    , attendance = Float.parseFloat(attendance_marks.getText().toString());
 
-            String result = MarksCalculator.calculate(fism1, sism1, fis1, atends1, asimt1);
+            String result = MarksCalculator.calculate(firstInSem, secondInSem, finalInSem, assignment, attendance);
 
             ((TextView) findViewById(R.id.result)).setText(result);
         } catch (NumberFormatException e){

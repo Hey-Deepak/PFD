@@ -17,17 +17,17 @@ public class MarksCalculator {
 
             } else {
                 return  ("You are UnSafe and you have to gain " + (35 - myFinalSem) + " more marks from Teacher (Current Time)." +
-                        "Means Next time in Final Back Paper you have to score Only 35 Marks. ");
+                        " Means Next time in Final Back Paper you have to score Only 35 Marks. ");
 
             }
         } else {
             if ((myFinalSem + (35 - total) * 2) < 35) {
                 return ((("You are UnSafe and you have to gain ") + ((35 - total) * 2) + " more marks from Teacher (Current Time)."
-                + "Means Next time in Final Back Paper you have to score Only 35 Marks."));
+                + " Means Next time in Final Back Paper you have to score Only 35 Marks."));
 
             } else {
                 return (" You are UnSafe and you have to gain " + ((35 - total) * 2) + " more marks from Teacher (Current Time).") +
-                        ("Means Next time in Final Back Paper you have to score Only " + (myFinalSem + (35 - total) * 2) + " Marks");
+                        (" Means Next time in Final Back Paper you have to score Only " + (myFinalSem + (35 - total) * 2) + " Marks");
 
             }
         }
