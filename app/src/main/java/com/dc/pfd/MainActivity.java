@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     , assignment = Float.parseFloat(assignment_marks.getText().toString())
                     , attendance = Float.parseFloat(attendance_marks.getText().toString());
 
-            hideKeyboardFrom();
+            hideKeyboard();
 
             String result = MarksCalculator.calculate(firstInSem, secondInSem, finalInSem, assignment, attendance);
 
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void hideKeyboardFrom() {
+    private void hideKeyboard() {
         View view = this.getCurrentFocus();
         InputMethodManager imm = (InputMethodManager) this.getSystemService(Activity.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
