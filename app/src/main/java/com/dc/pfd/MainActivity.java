@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         attendance_marks = findViewById(R.id.attendance);
         TextInputEditText obj5 = (TextInputEditText) findViewById(R.id.attendance);
-        obj5.setError("You need to enter a Number 0 to 50");
+        obj5.setError("You need to enter a Number 0 to 5");
 
         calculateBtn = findViewById(R.id.calculate);
 
